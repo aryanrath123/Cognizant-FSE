@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mouse and Keyboard Events</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        #box {
+            width: 300px;
+            height: 150px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 150px;
+            margin: 20px;
+        }
+
+        input {
+            padding: 10px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Mouse and Keyboard Events</h1>
+
+    <div id="box">Community Event Portal</div>
+
+    <input type="text" id="input" placeholder="Type something">
+
+    <p id="message"></p>
+
+    <script>
+        $(document).ready(function () {
+
+            $("#box").click(function () {
+                $(this).css("background-color", "yellow");
+            });
+
+            $("#box").dblclick(function () {
+                $(this).text("Double Clicked!");
+            });
+
+            $("#box").mouseenter(function () {
+                $(this).css("background-color", "green");
+            });
+
+            $("#box").mouseleave(function () {
+                $(this).css("background-color", "lightblue");
+            });
+
+            $("#input").keypress(function () {
+                $("#message").text("Key Pressed!");
+            });
+
+        });
+    </script>
+
+</body>
+</html>

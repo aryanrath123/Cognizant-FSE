@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Common Methods</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        .box {
+            width: 150px;
+            height: 100px;
+            background-color: blue;
+            color: white;
+            margin: 10px;
+            text-align: center;
+            line-height: 100px;
+            display: inline-block;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Community Event Portal</h1>
+
+    <div class="box">Event 1</div>
+    <div class="box">Event 2</div>
+    <div class="box">Event 3</div>
+
+    <br><br>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="fadeOut">Fade Out</button>
+    <button id="fadeIn">Fade In</button>
+    <button id="toggle">Toggle</button>
+    <button id="slide">Slide</button>
+
+    <script>
+        $(document).ready(function () {
+
+            $("#hide").click(function () {
+                $(".box").hide();
+            });
+
+            $("#show").click(function () {
+                $(".box").show();
+            });
+
+            $("#fadeOut").click(function () {
+                $(".box").fadeOut();
+            });
+
+            $("#fadeIn").click(function () {
+                $(".box").fadeIn();
+            });
+
+            $("#toggle").click(function () {
+                $(".box").toggle();
+            });
+
+            $("#slide").click(function () {
+                $(".box").slideUp().delay(1000).slideDown();
+            });
+
+        });
+    </script>
+
+</body>
+</html>

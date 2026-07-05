@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Creating and Modifying Elements</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <h1>Community Event List</h1>
+
+    <form id="eventForm">
+        <input type="text" id="eventName" placeholder="Enter event name">
+        <button type="submit">Add Event</button>
+    </form>
+
+    <ul id="eventList"></ul>
+
+    <button id="removeAll">Remove All</button>
+
+    <script>
+        $(document).ready(function () {
+
+            $("#eventForm").submit(function (event) {
+                event.preventDefault();
+
+                let value = $("#eventName").val();
+
+                let item = $("<li>").text(value);
+
+                $("#eventList").append(item);
+
+                $("#eventName").val("");
+            });
+
+            $("#removeAll").click(function () {
+                $("#eventList").empty();
+            });
+
+        });
+    </script>
+
+</body>
+</html>
