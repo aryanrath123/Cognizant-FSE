@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Link and List Styling</title>
+
+    <style>
+        a:link {
+            color: blue;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        .nav {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .nav li {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .eventList {
+            list-style-type: square;
+            list-style-position: inside;
+        }
+
+        .eventList li {
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Navigation</h2>
+
+    <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <h2>Event List</h2>
+
+    <ul class="eventList">
+        <li>Music Event</li>
+        <li>Sports Event</li>
+        <li>Food Festival</li>
+    </ul>
+
+</body>
+</html>

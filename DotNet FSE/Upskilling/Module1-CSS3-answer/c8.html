@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Box Model</title>
+
+    <style>
+        .eventCard {
+            border: 2px solid blue;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        input:focus {
+            outline: 3px solid red;
+        }
+
+        .hidden {
+            visibility: hidden;
+        }
+
+        .none {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="eventCard">
+        <h2>Music Event</h2>
+        <p>This is a community music event.</p>
+    </div>
+
+    <form>
+        <label>Name:</label>
+        <input type="text">
+    </form>
+
+    <p class="hidden">This text is hidden using visibility.</p>
+
+    <p class="none">This text is hidden using display none.</p>
+
+</body>
+</html>
