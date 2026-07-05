@@ -1,0 +1,13 @@
+Exercise 2.1: 
+Explore the structure of the downloaded Bootstrap directory. Identify and explain the purpose of 
+the CSS, JS, and icons folders.
+
+
+Solution:
+Bootstrap directory contains different folders for CSS, JavaScript and icons.
+
+-> CSS folder contains Bootstrap stylesheet files. These files are used for styling the web page.
+-> JS folder contains Bootstrap JavaScript files. They are used for components like modal, dropdown and carousel.
+-> Icons folder contains Bootstrap icons which can be used in the web page.
+
+The minified files such as bootstrap.min.css and bootstrap.min.js are smaller versions of the original files.
